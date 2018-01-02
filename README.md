@@ -20,7 +20,12 @@ use App\Http\Middleware\CustomThrottle;
 
 二、使用：
 使用方法类似下面：
-'middleware' => 'throttle:inter,60,1
+在路由中添加中间件   
+
+'throttle:inter,60,1
+
 第一个参数：inter 可使用 ''（使用laravel提供的方式）, ip（id地址）,umid（用户MID）, sms（短信）, inter（接口名称）代替
+
 第二个数字表示最大访问次数
+
 第三个参数代表时间，单位：分钟
